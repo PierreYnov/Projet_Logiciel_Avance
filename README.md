@@ -59,6 +59,18 @@ Le jeu devra respecter plusieurs points :
 ## II. Présentation du projet
 ### 1. Le projet
 
+* Plateau neutre
+    ![](https://i.ibb.co/hD82498/1-bj.png)
+
+* Plateau avec partie lancée et jeton misé
+    ![](https://i.ibb.co/9rgKCMh/2-bj.png)
+
+* Plateau avec le croupier détenant la victoire
+    ![](https://i.ibb.co/m8WWh4S/3-bj.png)
+
+* Plateau avec le joueur détenant la victoire
+    ![](https://i.ibb.co/Fm3Zv5K/4-bj.png)
+
 ### 2. Les choix technologiques
 
 * Langage python
@@ -73,5 +85,8 @@ Le jeu devra respecter plusieurs points :
 ## III. Guide d'installation et d'utilisation du projet
 
 * Télécharger ce répertoire GitHub
-* Se placer avec un terminal dans le dossier Blackjack, installer les librairies suivante avec pip : pygame, ect ect
-* Faire la commande `py blackjack.py`
+* Pour le solo :
+    * Se placer avec un terminal dans le dossier Blackjack, installer les librairies suivante avec pip : pygame, tkinter, subprocess, socket et thread
+    * Faire la commande `py blackjack.py`
+* Pour le multijoueur :
+    * Ne fonctionne pas
