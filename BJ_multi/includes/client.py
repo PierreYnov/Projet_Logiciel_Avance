@@ -1,5 +1,6 @@
 import socket
 import pygame
+import subprocess
 
 
 pygame.font.init()
@@ -8,7 +9,10 @@ width = 800
 height = 600
 win = pygame.display.set_mode((width, height))  # création de la fenêtre
 pygame.display.set_caption("Client")
-
+pygame.mixer.init()
+pygame.mixer.music.load("background.mp3")
+pygame.mixer.music.set_volume(0.15)
+pygame.mixer.music.play(-1,0.0)
 
 
 class Client():

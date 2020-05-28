@@ -4,9 +4,7 @@ import subprocess
 
 surfaceW = 800 #Dimension de la fenêtre / Largeur
 surfaceH = 600 #Dimension de la fenêtre / Longueur
-pygame.mixer.init()
-pygame.mixer.music.load("background.mp3")
-pygame.mixer.music.play(-1,0.0)
+
  
 class Menu :
     def __init__(self, application, *groupes) :
