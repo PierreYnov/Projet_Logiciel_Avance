@@ -15,7 +15,7 @@ _Réalisé par DUMONT Thomas **[@akhadimer](https://github.com/akhadimer)**, CEB
     - [3. Caractéristiques nécessaires](###3.-Caractéristiques-nécessaires)
 - [III. Guide d'installation et d'utilisation du projet](#iii-Guide-d'installation-et-d'utilisation-du-projet)
 - [IV. Pour aller plus loin](#iv-Pour-aller-plus-loin)
-- [VI. Crédits](##v-Crédits)
+- [VI. Crédits](#v-Crédits)
 
 
 
