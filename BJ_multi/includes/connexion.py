@@ -24,6 +24,7 @@ def login():
             text_file.close()
             subprocess.call(['python', 'start.py'])
             window.destroy()
+
         else:
             l3.config(text="Mauvais mot de passe", fg='yellow')
 
@@ -62,6 +63,50 @@ def signup():
         conn.commit()
         conn.close()
 
+    def retour_menu():
+        def login_database():
+            conn = sqlite3.connect("1.db")
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM test WHERE email=? AND password=?", (e1.get(), e2.get()))
+            row = cur.fetchall()
+            conn.close()
+            print(row)
+            if row != []:
+                user_name = row[0][1]
+                l3.config(text="Connexion réussie au compte : " + user_name, background='green', fg='yellow')
+                text_file = open("test.txt", "wt")
+                n = text_file.write(user_name)
+                text_file.close()
+                subprocess.call(['python', 'start.py'])
+
+
+            else:
+                l3.config(text="Mauvais mot de passe", fg='yellow')
+
+
+        login_window = Tk()
+        login_window.title('Page de connexion')
+        login_window.config(background='green')
+        login_window.geometry("700x250")
+        l1 = Label(login_window, text="Adresse mail", font="times 20", background='green', fg='yellow')
+        l1.grid(row=1, column=1)
+        l2 = Label(login_window, text="Mot de passe", font="times 20", background='green', fg='yellow')
+        l2.grid(row=2, column=1)
+        l3 = Label(login_window, font="times 20", background='green')
+        l3.grid(row=5, column=2)
+
+        email_text = StringVar()
+        e1 = Entry(login_window, textvariable=email_text)
+        e1.grid(row=1, column=2)
+        password_text = StringVar()
+        e2 = Entry(login_window, textvariable=password_text)
+        e2.grid(row=2, column=2)
+
+        b1 = Button(login_window, text="Se connecter", width=20, command=login_database, background='green',
+                    fg='yellow')
+        b1.grid(row=4, column=2)
+        login_window.mainloop()
+
     window.destroy()
     signup_window = Tk()
     signup_window.title('Enregistre-toi')
@@ -88,6 +133,10 @@ def signup():
     b1 = Button(signup_window, text="Créer le compte", width=20, command=signup_database, background='green',
                 fg='yellow')
     b1.grid(row=4, column=2)
+
+    b2 = Button(signup_window, text="Connectez-vous", width=20, command=retour_menu, background='green',
+                fg='yellow')
+    b2.grid(row=6, column=2)
 
 
 l1 = Label(window, text="Connectez vous au Blackjack", font="times 20", background='green', fg='yellow')
