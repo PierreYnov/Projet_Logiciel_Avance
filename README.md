@@ -6,15 +6,15 @@ _Réalisé par DUMONT Thomas **[@akhadimer](https://github.com/akhadimer)**, CEB
 
 ## Sommaire 
 
-- [I. Présentation du sujet](##i-Présentation-du-sujet)
+- [I. Présentation du sujet](#i-Présentation-du-sujet)
     - [1. Le contexte](###1.-Le-contexte)
     - [2. Problématique](###2.-Problématique)
-- [II. Présentation du projet](##ii-Présentation-du-projet)
+- [II. Présentation du projet](#ii-Présentation-du-projet)
     - [1. Le projet](###1.-Le-projet)
     - [2. Les choix technologiques](###2.-Les-choiX-technologiques)
     - [3. Caractéristiques nécessaires](###3.-Caractéristiques-nécessaires)
-- [III. Guide d'installation et d'utilisation du projet](##iii-Guide-d'installation-et-d'utilisation-du-projet)
-- [IV. Pour aller plus loin](##iv-Pour-aller-plus-loin)
+- [III. Guide d'installation et d'utilisation du projet](#iii-Guide-d'installation-et-d'utilisation-du-projet)
+- [IV. Pour aller plus loin](#iv-Pour-aller-plus-loin)
 
 
 
