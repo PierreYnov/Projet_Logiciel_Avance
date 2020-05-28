@@ -1,5 +1,6 @@
 import pygame
- 
+import subprocess
+
 surfaceW = 800 #Dimension de la fenêtre / Largeur
 surfaceH = 600 #Dimension de la fenêtre / Longueur
  
@@ -111,6 +112,8 @@ class Jeu :
             True,
             next(self._couleurTexte)
         )
+        subprocess.call(['python', 'client.py'])
+        self.statut = False
  
     def update(self, events) :
         self._fenetre.blit(self.texte, self.rectTexte)
@@ -127,9 +130,9 @@ class Application :
     """ Classe maîtresse gérant les différentes interfaces du jeu """
     def __init__(self) :
         pygame.init()
-        pygame.display.set_caption("ISN ILIES")
+        pygame.display.set_caption("Menu du jeu")
  
-        self.fond = (150,)*3
+        self.fond = (34,139,34)
  
         self.fenetre = pygame.display.set_mode((surfaceW,surfaceH))
         # Groupe de sprites utilisé pour l'affichage
