@@ -2,7 +2,6 @@ import socket
 import pygame
 import subprocess
 
-
 pygame.font.init()
 pygame.init()
 width = 800
@@ -12,7 +11,7 @@ pygame.display.set_caption("Client")
 pygame.mixer.init()
 pygame.mixer.music.load("background.mp3")
 pygame.mixer.music.set_volume(0.15)
-pygame.mixer.music.play(-1,0.0)
+pygame.mixer.music.play(-1, 0.0)
 
 
 class Client():
@@ -66,7 +65,6 @@ class Client():
         win.blit(bj_banner, (x_pos, y_pos))
         pygame.display.flip()
         clock.tick(60)
-
 
 
 client = Client("0.0.0.0", 1234)
