@@ -15,7 +15,7 @@ _Réalisé par DUMONT Thomas **[@akhadimer](https://github.com/akhadimer)**, CEB
     - [3. Caractéristiques nécessaires](###3.-Caractéristiques-nécessaires)
 - [III. Guide d'installation et d'utilisation du projet](#iii-Guide-d'installation-et-d'utilisation-du-projet)
 - [IV. Pour aller plus loin](#iv-Pour-aller-plus-loin)
-
+- [VI. Crédits](##vi-crédits)
 
 
 
@@ -115,4 +115,13 @@ Le troisième s'occupe de la logique de jeu, pour savoir qui a gagné, perdu ou 
 * Pour le multijoueur :
     * en cours de dév ( `server.py` déjà prêt avec le système d'écoute, `connexion.py` prêt avec la possibilité de s'inscrire puis de se connecter pour lancer le menu `start.py`)
 
-### IV. Pour aller plus loin
+## IV. Pour aller plus loin
+- Finir le multijoueur
+- Régler les problèmes d'encodage
+- Alimenter les crédits par un système de paiement avec de l'argent réel
+- Gestion utilisateur plus grande pour les joueurs (Exemple : Ajout avatar)
+- Ajout d'un chat : Système de discussion pendant la partie entre les joueurs
+- Log des plus gros gains effectués sur la table pour pouvoir les montrer sur un podium des 3 meilleurs joueurs
+## VI. Crédits
+- Blackjack solo: https://github.com/torbjornhedqvist/blackjack
+- Python: https://www.python.org/
