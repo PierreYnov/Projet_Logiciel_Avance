@@ -127,7 +127,7 @@ def signup():
     e2 = Entry(signup_window, textvariable=email_text)
     e2.grid(row=2, column=2)
     password_text = StringVar()
-    e3 = Entry(signup_window, textvariable=password_text)
+    e3 = Entry(signup_window, textvariable=password_text, show='*')
     e3.grid(row=3, column=2)
 
     b1 = Button(signup_window, text="Créer le compte", width=20, command=signup_database, background='green',
