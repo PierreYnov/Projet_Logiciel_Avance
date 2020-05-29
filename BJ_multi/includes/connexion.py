@@ -44,7 +44,7 @@ def login():
     e1 = Entry(login_window, textvariable=email_text)
     e1.grid(row=1, column=2)
     password_text = StringVar()
-    e2 = Entry(login_window, textvariable=password_text)
+    e2 = Entry(login_window, textvariable=password_text, show='*')
     e2.grid(row=2, column=2)
 
     b1 = Button(login_window, text="Se connecter", width=20, command=login_database, background='green', fg='yellow')
@@ -59,7 +59,7 @@ def signup():
         cur.execute("CREATE TABLE IF NOT EXISTS test(id INTEGER PRIMARY KEY,name text,email text, password text)")
         cur.execute("INSERT INTO test Values(Null,?,?,?)", (e1.get(), e2.get(), e3.get()))
         l4 = Label(signup_window, text="Compte créé avec succès !", font="times 15", background='green', fg='yellow')
-        l4.grid(row=6, column=2)
+        l4.grid(row=7, column=2)
         conn.commit()
         conn.close()
 
@@ -99,7 +99,7 @@ def signup():
         e1 = Entry(login_window, textvariable=email_text)
         e1.grid(row=1, column=2)
         password_text = StringVar()
-        e2 = Entry(login_window, textvariable=password_text)
+        e2 = Entry(login_window, textvariable=password_text, show='*')
         e2.grid(row=2, column=2)
 
         b1 = Button(login_window, text="Se connecter", width=20, command=login_database, background='green',
